@@ -7,7 +7,7 @@ __version__ = "0.0.0"
 
 REPO_NAME = "Chicken-Disesase-Classifier"
 AUTHOR_USER_NAME = "CS-Aditya-Rawat"
-SRC_REPO = "chicken-disease-classifier"
+SRC_REPO = "chicken_disease_classifier"
 AUTHOR_EMAIL = "adityainferno4812@gmail.com"
 
 setuptools.setup(
