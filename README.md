@@ -1,6 +1,35 @@
 # Chicken-Disesase-Classifier
 
-## Workflows
+## Introduction
+
+Welcome to the Chicken Disease Classifier project! This is an end-to-end deep learning project using MLOps DVC pipeline, showcasing deployments on AWS platforms. The project aims to classify images of chickens based on various diseases they might have, thereby enabling early detection and effective disease management.
+
+### Project Overview
+
+The Chicken Disease Classifier project covers the following key components:
+
+1. Data Ingestion: Loading and preparing the dataset for training and validation.
+2. Data Validation: Ensuring the integrity and quality of the dataset.
+3. Model Training: Training a deep learning model using the prepared dataset.
+4. Model Evaluation: Evaluating the trained model's performance and accuracy.
+5. Web Application: Creating a Flask-based web application for image classification.
+6. Deployment: Deploying the trained model on Azure and AWS platforms.
+
+- Throughout the project, we'll emphasize modular coding, configuration management, and the use of MLOps tools like DVC for efficient pipeline execution and version control.
+
+# Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+- Python (version 3.6 or higher)
+- TensorFlow (version 2.x)
+- Keras (version 2.x)
+- Flask (version 2.x)
+- DVC (Data Version Control)
+- Docker (for AWS deployment)
+- AWS Account (for AWS deployment)
+
+# Workflows
 
 1. Update config.yaml
 2. Update secrets.yaml [Optional]
@@ -51,9 +80,11 @@ open up you local host and port
 
 ### DVC cmd
 
+```
 1. dvc init
 2. dvc repro
 3. dvc dag
+```
 
 # AWS-CICD-Deployment-with-Github-Actions
 
@@ -61,14 +92,13 @@ open up you local host and port
 
 ## 2. Create IAM user for deployment
 
-    #with specific access
+### with specific access
 
     1. EC2 access : It is virtual machine
 
     2. ECR: Elastic Container registry to save your docker image in aws
 
-
-    #Description: About the deployment
+### Description: About the deployment
 
     1. Build docker image of the source code
 
@@ -80,7 +110,7 @@ open up you local host and port
 
     5. Lauch your docker image in EC2
 
-    #Policy:
+### Policy:
 
     1. AmazonEC2ContainerRegistryFullAccess
 
